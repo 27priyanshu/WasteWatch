@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:waste_watch/location_waste_c.dart';
+import 'package:waste_watch/reportingpage.dart';
 
 class SignIn1 extends StatefulWidget {
   const SignIn1({super.key});
@@ -19,7 +20,6 @@ class _SignIn1State extends State<SignIn1> {
             child: Container(
           width: double.infinity,
           height: MediaQuery.of(context).size.height,
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -43,7 +43,7 @@ class _SignIn1State extends State<SignIn1> {
                     // Add TextFormFields and ElevatedButton here.
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 8.0, vertical: 16.0),
+                          horizontal: 18.0, vertical: 16.0),
                       child: TextFormField(
                         decoration: const InputDecoration(
                           border: OutlineInputBorder(),
@@ -59,7 +59,7 @@ class _SignIn1State extends State<SignIn1> {
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 8.0, vertical: 16.0),
+                          horizontal: 18.0, vertical: 16.0),
                       child: TextFormField(
                         decoration: const InputDecoration(
                           border: OutlineInputBorder(),
