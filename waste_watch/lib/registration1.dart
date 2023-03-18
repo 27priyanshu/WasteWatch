@@ -130,7 +130,7 @@ class _registerationState extends State<registeration> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                const SignIn1()),
+                                                const SignIn2()),
                                       );
                                     },
                                     child: Text(
@@ -145,7 +145,7 @@ class _registerationState extends State<registeration> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              const SignIn2()),
+                                              const SignIn1()),
                                     );
                                   },
                                   child: Text("Resident"),
