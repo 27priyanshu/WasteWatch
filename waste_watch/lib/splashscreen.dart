@@ -30,7 +30,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                "splashScreen.png",
+                "/Users/shubhsardana/Desktop/WasteWatch/waste_watch/images/splashScreen.png",
                 // height: 132.00,
                 // width: 150.00,
               ),
