@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class SignIn2 extends StatefulWidget {
@@ -26,11 +24,11 @@ class _SignIn2State extends State<SignIn2> {
             children: [
               Text(
                 "Welcome to WasteWatch again!",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: 50,
+                height: 30,
               ),
               Image.asset(
                   "/Users/shubhsardana/Desktop/WasteWatch/waste_watch/images/loginImage.png"),
@@ -42,23 +40,39 @@ class _SignIn2State extends State<SignIn2> {
                 child: Column(
                   children: <Widget>[
                     // Add TextFormFields and ElevatedButton here.
-                    TextFormField(
-                      // The validator receives the text that the user has entered.
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter email address';
-                        }
-                        return null;
-                      },
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8.0, vertical: 16.0),
+                      child: TextFormField(
+                        decoration: const InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: 'Enter your email address',
+                        ),
+                        // The validator receives the text that the user has entered.
+                        validator: (value) {
+                          if (value == null || value.isEmpty) {
+                            return 'Please enter email address';
+                          }
+                          return null;
+                        },
+                      ),
                     ),
-                    TextFormField(
-                      // The validator receives the text that the user has entered.
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter password';
-                        }
-                        return null;
-                      },
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8.0, vertical: 16.0),
+                      child: TextFormField(
+                        decoration: const InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: 'Enter your password',
+                        ),
+                        // The validator receives the text that the user has entered.
+                        validator: (value) {
+                          if (value == null || value.isEmpty) {
+                            return 'Please enter password';
+                          }
+                          return null;
+                        },
+                      ),
                     ),
                     SizedBox(
                       height: 30,

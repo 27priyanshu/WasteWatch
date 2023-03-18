@@ -150,6 +150,7 @@ class _registerationState extends State<registeration> {
                                   },
                                   child: Text("Resident"),
                                   style: ElevatedButton.styleFrom(
+                                      // minimumSize: ,
                                       backgroundColor: Colors.black),
                                 ),
                               ],
