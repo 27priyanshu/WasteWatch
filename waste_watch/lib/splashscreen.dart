@@ -13,7 +13,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 300), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (_) => registeration(),
@@ -24,48 +24,50 @@ class _GetStartedPageState extends State<GetStartedPage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.green[50],
         body: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            "splashScreen.png",
-            height: 132.00,
-            width: 150.00,
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-            child: Column(
-              children: <Widget>[
-                Container(
-                  margin: const EdgeInsets.fromLTRB(43, 0, 43, 0),
-                  child: Text(
-                    "WasteWatch",
-                    style: TextStyle(
-                      fontFamily: "Poppins",
-                      fontSize: 24,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                "splashScreen.png",
+                // height: 132.00,
+                // width: 150.00,
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      margin: const EdgeInsets.fromLTRB(43, 0, 43, 0),
+                      child: Text(
+                        "WasteWatch",
+                        style: TextStyle(
+                          fontFamily: "Poppins",
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                Container(
-                  margin: const EdgeInsets.fromLTRB(43, 24, 43, 0),
-                  child: Text(
-                    "Don't trash the streets, report with ease - cleaner neighborhoods,one app to please",
-                    style: TextStyle(
-                      fontFamily: "Poppins",
-                      fontSize: 20,
+                    Container(
+                      margin: const EdgeInsets.fromLTRB(43, 24, 43, 0),
+                      child: Text(
+                        "Don't trash the streets, report with ease - cleaner neighborhoods,one app to please",
+                        style: TextStyle(
+                          fontFamily: "Poppins",
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
-                    textAlign: TextAlign.center,
-                  ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
-      ),
-    ));
+        ));
   }
 }
