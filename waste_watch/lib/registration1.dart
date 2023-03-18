@@ -26,7 +26,9 @@ class _registerationState extends State<registeration> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(height: 30,),
+                    SizedBox(
+                      height: 30,
+                    ),
                     Text(
                       "Welcome to WasteWatch!",
                       style:
@@ -34,7 +36,7 @@ class _registerationState extends State<registeration> {
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
-                      height: 120,
+                      height: 122,
                     ),
                     Form(
                       key: _formKey,
@@ -121,17 +123,18 @@ class _registerationState extends State<registeration> {
                             child: Row(
                               children: [
                                 ElevatedButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    "Waste Collector",
-                                  ),
-                                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black)
-                                ),
+                                    onPressed: () {},
+                                    child: Text(
+                                      "Waste Collector",
+                                    ),
+                                    style: ElevatedButton.styleFrom(
+                                        backgroundColor: Colors.black)),
                                 SizedBox(width: 30),
                                 ElevatedButton(
                                   onPressed: () {},
                                   child: Text("Resident"),
-                                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                                  style: ElevatedButton.styleFrom(
+                                      backgroundColor: Colors.black),
                                 ),
                               ],
                             ),
