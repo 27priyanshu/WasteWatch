@@ -84,8 +84,7 @@ class _SignIn1State extends State<SignIn1> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>
-                                    const Location_Waste_collector()),
+                                builder: (context) => reporting()),
                           );
                         },
                         child: Text('Sign In'),

@@ -82,7 +82,14 @@ class _SignIn2State extends State<SignIn2> {
                       height: 40,
                       width: 120,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const Location_Waste_collector()),
+                          );
+                        },
                         child: Text('Sign In'),
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.black),

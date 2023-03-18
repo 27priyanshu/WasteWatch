@@ -148,41 +148,42 @@ class _registerationState extends State<registeration> {
                                       style: ElevatedButton.styleFrom(
                                           backgroundColor: Colors.black)),
                                 ),
-                                // SizedBox(width: 30),
+                                SizedBox(width: 30),
                                 SizedBox(
                                   height: 40,
                                   width: 140,
                                   child: ElevatedButton(
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const SignIn1()),
-                                      );
-                                    },
-                                    child: Text("Resident"),
-                                    style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.black)),),
-                                // SizedBox(width: 30),
-                                SizedBox(
-                                  height: 40,
-                                  width: 140,
-                                  child: ElevatedButton(
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const SignIn2()),
-                                      );
-                                    },
-                                    child: Text("Resident"),
-                                    style: ElevatedButton.styleFrom(
-                                        // minimumSize: ,
-                                        backgroundColor: Colors.black),
-                                  ),
+                                      onPressed: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => 
+                                                  const SignIn1()),
+                                        );
+                                      },
+                                      child: Text("Resident"),
+                                      style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.black)),
                                 ),
+                                // SizedBox(width: 30),
+                                // SizedBox(
+                                //   height: 40,
+                                //   width: 140,
+                                //   child: ElevatedButton(
+                                //     onPressed: () {
+                                //       Navigator.push(
+                                //         context,
+                                //         MaterialPageRoute(
+                                //             builder: (context) =>
+                                //                 const SignIn2()),
+                                //       );
+                                //     },
+                                //     child: Text("Resident"),
+                                //     style: ElevatedButton.styleFrom(
+                                //         // minimumSize: ,
+                                //         backgroundColor: Colors.black),
+                                //   ),
+                                // ),
                               ],
                             ),
                           ),
