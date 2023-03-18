@@ -13,7 +13,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), () {
+    Timer(Duration(seconds: 300), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (_) => registeration(),
@@ -29,7 +29,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            "assets/images/img_ggsipulogo1.png",
+            "splashScreen.png",
             height: 132.00,
             width: 150.00,
           ),
@@ -69,4 +69,3 @@ class _GetStartedPageState extends State<GetStartedPage> {
     ));
   }
 }
-
