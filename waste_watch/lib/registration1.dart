@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
+import 'package:waste_watch/sign_in_2.dart';
 
 class registeration extends StatefulWidget {
   registeration({Key? key}) : super(key: key);
@@ -76,9 +77,31 @@ class _registerationState extends State<registeration> {
                               return null;
                             },
                           ),
-                          Column(children: [Text("Are You?")],),
-                          Row(children: [TextButton(onPressed: (){}, child: Text("Waste Collector")),TextButton(onPressed: (){}, child: Text("Resident"))],),
-                        
+                          Column(
+                            children: [Text("Are You?")],
+                          ),
+                          Row(
+                            children: [
+                              TextButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const SignIn2()));
+                                  },
+                                  child: Text("Waste Collector")),
+                              TextButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const SignIn2()));
+                                  },
+                                  child: Text("Resident"))
+                            ],
+                          ),
                         ],
                       ),
                     )
