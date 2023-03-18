@@ -27,6 +27,7 @@ class _registerationState extends State<registeration> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    SizedBox(height: 30,),
                     Text(
                       "Welcome to WasteWatch!",
                       style:
@@ -34,7 +35,7 @@ class _registerationState extends State<registeration> {
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 120,
                     ),
                     Form(
                       key: _formKey,
@@ -77,31 +78,9 @@ class _registerationState extends State<registeration> {
                               return null;
                             },
                           ),
-                          Column(
-                            children: [Text("Are You?")],
-                          ),
-                          Row(
-                            children: [
-                              TextButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const SignIn2()));
-                                  },
-                                  child: Text("Waste Collector")),
-                              TextButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const SignIn2()));
-                                  },
-                                  child: Text("Resident"))
-                            ],
-                          ),
+                          Column(children: [Text("Are You?")],),
+                          Row(children: [TextButton(onPressed: (){}, child: Text("Waste Collector")),TextButton(onPressed: (){}, child: Text("Resident"))],),
+                        
                         ],
                       ),
                     )
