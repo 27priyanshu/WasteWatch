@@ -26,6 +26,7 @@ class _registerationState extends State<registeration> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    SizedBox(height: 30,),
                     Text(
                       "Welcome to WasteWatch!",
                       style:
@@ -33,52 +34,108 @@ class _registerationState extends State<registeration> {
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 120,
                     ),
                     Form(
                       key: _formKey,
                       child: Column(
                         children: <Widget>[
                           // Add TextFormFields and ElevatedButton here.
-                          TextFormField(
-                            // The validator receives the text that the user has entered.
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Please enter full name';
-                              }
-                              return null;
-                            },
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0, vertical: 16.0),
+                            child: TextFormField(
+                              decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Enter your full name',
+                              ),
+                              // The validator receives the text that the user has entered.
+                              validator: (value) {
+                                if (value == null || value.isEmpty) {
+                                  return 'Please enter full name';
+                                }
+                                return null;
+                              },
+                            ),
                           ),
-                          TextFormField(
-                            // The validator receives the text that the user has entered.
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Please enter email address';
-                              }
-                              return null;
-                            },
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0, vertical: 16.0),
+                            child: TextFormField(
+                              decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Enter your email Address',
+                              ),
+                              // The validator receives the text that the user has entered.
+                              validator: (value) {
+                                if (value == null || value.isEmpty) {
+                                  return 'Please enter email address';
+                                }
+                                return null;
+                              },
+                            ),
                           ),
-                          TextFormField(
-                            // The validator receives the text that the user has entered.
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Please enter password';
-                              }
-                              return null;
-                            },
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0, vertical: 16),
+                            child: TextFormField(
+                              decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Enter your password',
+                              ),
+                              // The validator receives the text that the user has entered.
+                              validator: (value) {
+                                if (value == null || value.isEmpty) {
+                                  return 'Please enter password';
+                                }
+                                return null;
+                              },
+                            ),
                           ),
-                          TextFormField(
-                            // The validator receives the text that the user has entered.
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Please enter contact no.';
-                              }
-                              return null;
-                            },
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0, vertical: 16.0),
+                            child: TextFormField(
+                              decoration: const InputDecoration(
+                                border: OutlineInputBorder(),
+                                labelText: 'Enter your contact no.',
+                              ),
+                              // The validator receives the text that the user has entered.
+                              validator: (value) {
+                                if (value == null || value.isEmpty) {
+                                  return 'Please enter contact no.';
+                                }
+                                return null;
+                              },
+                            ),
                           ),
-                          Column(children: [Text("Are You?")],),
-                          Row(children: [TextButton(onPressed: (){}, child: Text("Waste Collector")),TextButton(onPressed: (){}, child: Text("Resident"))],),
-                        
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Column(
+                            children: [Text("Are You?")],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 30.0, vertical: 18.0),
+                            child: Row(
+                              children: [
+                                ElevatedButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Waste Collector",
+                                  ),
+                                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black)
+                                ),
+                                SizedBox(width: 30),
+                                ElevatedButton(
+                                  onPressed: () {},
+                                  child: Text("Resident"),
+                                  style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     )
