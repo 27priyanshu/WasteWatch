@@ -1,4 +1,4 @@
-import 'dart:ffi';
+
 
 import 'package:flutter/material.dart';
 
@@ -33,7 +33,7 @@ class _SignIn2State extends State<SignIn2> {
                 height: 50,
               ),
               Image.asset(
-                  "C:/Users/PRIYANSHU SINGH/WasteWatch/waste_watch/images/loginImage.png"),
+                  "/Users/shubhsardana/Desktop/WasteWatch/waste_watch/images/loginImage.png"),
               SizedBox(
                 height: 30,
               ),

@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class SignIn1 extends StatefulWidget {
@@ -33,7 +31,7 @@ class _SignIn1State extends State<SignIn1> {
                 height: 50,
               ),
               Image.asset(
-                  "C:/Users/PRIYANSHU SINGH/WasteWatch/waste_watch/images/loginImage.png"),
+                  "/Users/shubhsardana/Desktop/WasteWatch/waste_watch/images/loginImage.png"),
               SizedBox(
                 height: 30,
               ),
