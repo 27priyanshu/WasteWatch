@@ -114,44 +114,58 @@ class _registerationState extends State<registeration> {
                             ),
                           ),
                           SizedBox(
-                            height: 30,
+                            height: 10,
                           ),
                           Column(
-                            children: [Text("Are You?")],
+                            children: [
+                              Text(
+                                "Are You?",
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold),
+                              ),
+                            ],
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 30.0, vertical: 18.0),
+                                horizontal: 10.0, vertical: 18.0),
                             child: Row(
                               children: [
-                                ElevatedButton(
+                                SizedBox(
+                                  height: 40,
+                                  width: 140,
+                                  child: ElevatedButton(
+                                      onPressed: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const SignIn1()),
+                                        );
+                                      },
+                                      child: Text(
+                                        "Waste Collector",
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.black)),
+                                ),
+                                SizedBox(width: 30),
+                                SizedBox(
+                                  height: 40,
+                                  width: 140,
+                                  child: ElevatedButton(
                                     onPressed: () {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                const SignIn1()),
+                                                const SignIn2()),
                                       );
                                     },
-                                    child: Text(
-                                      "Waste Collector",
-                                    ),
+                                    child: Text("Resident"),
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.black)),
-                                SizedBox(width: 30),
-                                ElevatedButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              const SignIn2()),
-                                    );
-                                  },
-                                  child: Text("Resident"),
-                                  style: ElevatedButton.styleFrom(
-                                      // minimumSize: ,
-                                      backgroundColor: Colors.black),
+                                        // minimumSize: ,
+                                        backgroundColor: Colors.black),
+                                  ),
                                 ),
                               ],
                             ),

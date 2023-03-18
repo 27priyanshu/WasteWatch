@@ -78,13 +78,15 @@ class _SignIn2State extends State<SignIn2> {
                     SizedBox(
                       height: 30,
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        
-                      },
-                      child: Text('Sign In'),
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.black),
+                    SizedBox(
+                      height: 40,
+                      width: 120,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text('Sign In'),
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.black),
+                      ),
                     )
                   ],
                 ),

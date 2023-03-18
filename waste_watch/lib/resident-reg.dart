@@ -76,18 +76,22 @@ class _SignIn1State extends State<SignIn1> {
                     SizedBox(
                       height: 30,
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const Location_Waste_collector()),
-                        );
-                      },
-                      child: Text('Sign In'),
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.black),
+                    SizedBox(
+                      height: 40,
+                      width: 120,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const Location_Waste_collector()),
+                          );
+                        },
+                        child: Text('Sign In'),
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.black),
+                      ),
                     )
                   ],
                 ),
