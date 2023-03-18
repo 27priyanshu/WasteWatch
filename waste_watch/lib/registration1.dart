@@ -38,7 +38,7 @@ class _registerationState extends State<registeration> {
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
-                      height: 122,
+                      height: 30,
                     ),
                     Form(
                       key: _formKey,
@@ -150,6 +150,7 @@ class _registerationState extends State<registeration> {
                                   },
                                   child: Text("Resident"),
                                   style: ElevatedButton.styleFrom(
+                                      // minimumSize: ,
                                       backgroundColor: Colors.black),
                                 ),
                               ],
