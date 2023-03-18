@@ -38,7 +38,7 @@ class _registerationState extends State<registeration> {
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(
-                      height: 122,
+                      height: 30,
                     ),
                     Form(
                       key: _formKey,

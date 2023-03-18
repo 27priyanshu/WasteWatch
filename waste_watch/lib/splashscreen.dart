@@ -41,18 +41,6 @@ class _GetStartedPageState extends State<GetStartedPage> {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      margin: const EdgeInsets.fromLTRB(43, 0, 43, 0),
-                      child: Text(
-                        "WasteWatch",
-                        style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
                       margin: const EdgeInsets.fromLTRB(43, 24, 43, 0),
                       child: Text(
                         "Don't trash the streets, report with ease - cleaner neighborhoods,one app to please",
