@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:waste_watch/location_waste_c.dart';
 
 class SignIn2 extends StatefulWidget {
   const SignIn2({super.key});
@@ -78,7 +79,9 @@ class _SignIn2State extends State<SignIn2> {
                       height: 30,
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        
+                      },
                       child: Text('Sign In'),
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.black),
