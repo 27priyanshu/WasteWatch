@@ -14,3 +14,4 @@ WasteWatch is an app that addresses the issue of home waste not being collected.
 - Notification of waste management authorities :bell:
 - Monitoring corrective action :construction:
 - Comments and data analysis for waste pickup services enhancement :speech_balloon:
+- Used Machine learning model to identify the set biodegradable & non-biodegradable waste from the reported Picture :camera:
